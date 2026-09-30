@@ -1,0 +1,21 @@
+=== Task 4C: symmetry experiment (all weights initialised to 0) ===
+
+hidden-layer weight matrix W(1) at selected steps:
+(row 0 and row 1 are the parameter vectors of hidden units 0 and 1)
+
+step    0: row 0 = [0.0, 0.0],  row 1 = [0.0, 0.0],  identical=True
+step    1: row 0 = [0.0, 0.0],  row 1 = [0.0, 0.0],  identical=True
+step    5: row 0 = [0.0, 0.0],  row 1 = [0.0, 0.0],  identical=True
+step   20: row 0 = [0.0, 0.0],  row 1 = [0.0, 0.0],  identical=True
+step  100: row 0 = [0.0, 0.0],  row 1 = [0.0, 0.0],  identical=True
+step  500: row 0 = [0.0, 0.0],  row 1 = [0.0, 0.0],  identical=True
+step 2000: row 0 = [0.0, 0.0],  row 1 = [0.0, 0.0],  identical=True
+
+final loss = 0.693147
+final predictions:
+  x=(0,0)  target=0  prob=0.5000  pred=1
+  x=(0,1)  target=1  prob=0.5000  pred=1
+  x=(1,0)  target=1  prob=0.5000  pred=1
+  x=(1,1)  target=0  prob=0.5000  pred=1
+
+2/4 correct — the network cannot break out of the symmetric solution.

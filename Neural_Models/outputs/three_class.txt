@@ -1,0 +1,22 @@
+=== Task 5: three-class sensor decision (seed=0) ===
+
+initial loss = 1.073498
+final   loss = 0.036772
+
+output-layer weight matrix shape W(2) = (3, 2)  (rows=classes=3, cols=hidden_dim=2)
+logits per example = 3 
+
+x1 x2 | target | probabilities [c0, c1, c2]        | pred | correct?
+------+--------+-----------------------------------+------+---------
+ 0  0 |   0    | [0.9638, 0.0362, 0.0000] |  0   |  yes
+ 0  1 |   1    | [0.0161, 0.9670, 0.0169] |  1   |  yes
+ 1  0 |   1    | [0.0167, 0.9659, 0.0174] |  1   |  yes
+ 1  1 |   2    | [0.0000, 0.0411, 0.9589] |  2   |  yes
+
+4/4 correct
+
+softmax check on the (0,1) example:
+  probabilities = [0.016105718910694122, 0.9670037627220154, 0.01689048483967781]
+  sum           = 0.9999999404
+
+softmax(logits + 100) == softmax(logits)? max |Δ| across all 4 x 3 entries = 1.192e-07

@@ -1,0 +1,14 @@
+=== Task 4D: activation experiment (2-2-1 XOR, seed=0) ===
+
+early gradient norm measured at training step 5
+
+hidden activation | init loss | final loss | 4/4? | ||∇W(1) L||_2 (step 5)
+------------------+-----------+------------+------+-----------------------
+  sigmoid         |  0.697659 |   0.693107 |  2/4 | 0.001454
+  tanh            |  0.715159 |   0.013460 |  4/4 | 0.054755
+  relu            |  0.706885 |   0.477879 |  3/4 | 0.001615
+
+final probabilities per input:
+  sigmoid  -> (0,0)=0.5057  (0,1)=0.5007  (1,0)=0.4995  (1,1)=0.4943
+  tanh     -> (0,0)=0.0168  (0,1)=0.9905  (1,0)=0.9905  (1,1)=0.0177
+  relu     -> (0,0)=0.6661  (0,1)=0.6661  (1,0)=0.6661  (1,1)=0.0020

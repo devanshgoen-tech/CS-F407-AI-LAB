@@ -1,0 +1,22 @@
+=== Task 4A: basic learning check (sigmoid hidden, seed=0) ===
+initial loss = 0.702770
+final   loss = 0.000048
+
+x1 x2 | target | prob    | pred | correct?
+------+--------+---------+------+---------
+ 0  0 |   0    | 0.0001  |  0   |  yes
+ 0  1 |   1    | 1.0000  |  1   |  yes
+ 1  0 |   1    | 1.0000  |  1   |  yes
+ 1  1 |   0    | 0.0000  |  0   |  yes
+
+4/4 correct
+
+=== Task 4B: backpropagation check ===
+
+gradients after one final backward() on the mean loss:
+  W(1).grad shape = (2, 2)  (∂L/∂W(1))
+tensor([[-6.4807e-08, -5.7245e-08],
+        [-5.4561e-07, -6.1949e-07]])
+  b(1).grad = [1.518877070338931e-06, 1.899476274047629e-07]
+  W(2).grad = [[7.82087863626657e-06, -1.3515215869119857e-05]]
+  ||∇_W(1) L||_2 = 0.000001
