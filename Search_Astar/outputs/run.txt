@@ -1,0 +1,50 @@
+Warehouse map:
+#################
+#S....#.........#
+#.###.#.#######.#
+#...#.#.......#.#
+###.#.#######.#.#
+#...#.........#.#
+#.###########.#.#
+#.............#G#
+#################
+
+=== Task 3 - Original warehouse (A*, Manhattan) ===
+[A*]
+  path length (moves): 40
+  states expanded:     64
+  actions:             Right, Right, Right, Right, Down, Down, Down, Down, Right, Right, Right, Right, Right, Right, Right, Right, Up, Up, Left, Left, Left, Left, Left, Left, Up, Up, Right, Right, Right, Right, Right, Right, Right, Right, Down, Down, Down, Down, Down, Down
+  path drawn:
+    #################
+    #S****#*********#
+    #.###*#*#######*#
+    #...#*#*******#*#
+    ###.#*#######*#*#
+    #...#*********#*#
+    #.###########.#*#
+    #.............#G#
+    #################
+
+=== Task 5 - A* vs BFS ===
+  measure               BFS       A*        
+  solution found        True      True      
+  path length           40        40        
+  states expanded       64        64        
+
+=== Task 6 - Heuristic experiments ===
+[A* / h = 0 (uniform cost)]
+  path length (moves): 40
+  states expanded:     64
+  actions:             Right, Right, Right, Right, Down, Down, Down, Down, Right, Right, Right, Right, Right, Right, Right, Right, Up, Up, Left, Left, Left, Left, Left, Left, Up, Up, Right, Right, Right, Right, Right, Right, Right, Right, Down, Down, Down, Down, Down, Down
+[A* / Manhattan (admissible)]
+  path length (moves): 40
+  states expanded:     64
+  actions:             Right, Right, Right, Right, Down, Down, Down, Down, Right, Right, Right, Right, Right, Right, Right, Right, Up, Up, Left, Left, Left, Left, Left, Left, Up, Up, Right, Right, Right, Right, Right, Right, Right, Right, Down, Down, Down, Down, Down, Down
+[A* / Euclidean (admissible, weaker)]
+  path length (moves): 40
+  states expanded:     64
+  actions:             Right, Right, Right, Right, Down, Down, Down, Down, Right, Right, Right, Right, Right, Right, Right, Right, Up, Up, Left, Left, Left, Left, Left, Left, Up, Up, Right, Right, Right, Right, Right, Right, Right, Right, Down, Down, Down, Down, Down, Down
+[A* / 2 x Manhattan (inadmissible)]
+  path length (moves): 40
+  states expanded:     64
+  actions:             Right, Right, Right, Right, Down, Down, Down, Down, Right, Right, Right, Right, Right, Right, Right, Right, Up, Up, Left, Left, Left, Left, Left, Left, Up, Up, Right, Right, Right, Right, Right, Right, Right, Right, Down, Down, Down, Down, Down, Down

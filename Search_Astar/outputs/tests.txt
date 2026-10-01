@@ -1,0 +1,22 @@
+Test 1 - original warehouse
+  [PASS] path found
+  [PASS] starts at S
+  [PASS] ends at G
+Test 2 - trivial adjacent goal
+  [PASS] one-step solution
+  [PASS] action is Right
+Test 3 - unreachable goal
+  [PASS] failure reported, no path
+Test 4 - map with alternative paths
+  [PASS] A* returns a shortest path
+  [PASS] BFS and A* agree on length
+Test 5 - A* with admissible h matches BFS optimality
+  [PASS] both find a path
+  [PASS] same shortest path length
+  [PASS] A* expands no more than BFS
+Test 6 - heuristic variants still terminate
+  [PASS] zero: path found
+  [PASS] euclidean: path found
+  [PASS] 2x manhattan: path found
+
+All tests passed.
