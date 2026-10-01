@@ -1,0 +1,21 @@
+/opt/anaconda3/lib/python3.13/site-packages/pgmpy/estimators/__init__.py:4: FutureWarning: `pgmpy.estimators.StructureScore` is deprecated and will be removed in v1.3.0. Use `pgmpy.structure_score` instead.
+  from .StructureScore import (
+test_reference_structure
+  [PASS] check_model()
+  [PASS] nodes
+  [PASS] edges
+test_cpds_normalised
+  [PASS] Cloudy: columns sum to 1
+  [PASS] Rain: columns sum to 1
+  [PASS] Sprinkler: columns sum to 1
+  [PASS] WetGrass: columns sum to 1
+test_posterior_matches_oracle
+  [PASS] P(Rain=1 | {'WetGrass': 1}) matches brute-force oracle
+  [PASS] P(Sprinkler=1 | {'WetGrass': 1}) matches brute-force oracle
+  [PASS] P(Cloudy=1 | {'WetGrass': 1}) matches brute-force oracle
+  [PASS] P(Rain=1 | {'WetGrass': 1, 'Sprinkler': 0}) matches brute-force oracle
+test_mle_converges_to_truth
+  [PASS] large-sample MLE closer to truth than small-sample
+  [PASS] large-sample MLE within 0.05 of truth
+
+All tests passed.

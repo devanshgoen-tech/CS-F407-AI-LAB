@@ -1,0 +1,44 @@
+/opt/anaconda3/lib/python3.13/site-packages/pgmpy/estimators/__init__.py:4: FutureWarning: `pgmpy.estimators.StructureScore` is deprecated and will be removed in v1.3.0. Use `pgmpy.structure_score` instead.
+  from .StructureScore import (
+Nodes: ['Cloudy', 'Rain', 'Sprinkler', 'WetGrass']
+Edges: [('Cloudy', 'Rain'), ('Cloudy', 'Sprinkler'), ('Rain', 'WetGrass'), ('Sprinkler', 'WetGrass')]
+check_model(): True
+
+=== CPDs ===
++-----------+-----+
+| Cloudy(0) | 0.5 |
++-----------+-----+
+| Cloudy(1) | 0.5 |
++-----------+-----+
+
++---------+-----------+-----------+
+| Cloudy  | Cloudy(0) | Cloudy(1) |
++---------+-----------+-----------+
+| Rain(0) | 0.8       | 0.2       |
++---------+-----------+-----------+
+| Rain(1) | 0.2       | 0.8       |
++---------+-----------+-----------+
+
++--------------+-----------+-----------+
+| Cloudy       | Cloudy(0) | Cloudy(1) |
++--------------+-----------+-----------+
+| Sprinkler(0) | 0.5       | 0.9       |
++--------------+-----------+-----------+
+| Sprinkler(1) | 0.5       | 0.1       |
++--------------+-----------+-----------+
+
++-------------+--------------+--------------+--------------+--------------+
+| Rain        | Rain(0)      | Rain(0)      | Rain(1)      | Rain(1)      |
++-------------+--------------+--------------+--------------+--------------+
+| Sprinkler   | Sprinkler(0) | Sprinkler(1) | Sprinkler(0) | Sprinkler(1) |
++-------------+--------------+--------------+--------------+--------------+
+| WetGrass(0) | 0.99         | 0.1          | 0.1          | 0.01         |
++-------------+--------------+--------------+--------------+--------------+
+| WetGrass(1) | 0.01         | 0.9          | 0.9          | 0.99         |
++-------------+--------------+--------------+--------------+--------------+
+
+=== Exact inference via Variable Elimination ===
+  P(Rain=1 | WetGrass=1) = 0.704769   (brute force: 0.704769)
+  P(Sprinkler=1 | WetGrass=1) = 0.427846   (brute force: 0.427846)
+  P(Cloudy=1 | WetGrass=1) = 0.574615   (brute force: 0.574615)
+  P(Rain=1 | WetGrass=1 Sprinkler=0) = 0.992202   (brute force: 0.992202)

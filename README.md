@@ -12,6 +12,7 @@ and lab exercises.
 | 3 | Goal-Based Agent for Warehouse Navigation | [Agents_Lab/](Agents_Lab/) |
 | 4 | Search and A\* with Heuristic Comparison | [Search_Astar/](Search_Astar/) |
 | 5 | Logical Reasoning for Planning (STRIPS + Prolog) | [Logical_Planning/](Logical_Planning/) |
+| 6 | Sprinkler Bayesian Network (pgmpy + LLM code assistant) | [Sprinkler_BN/](Sprinkler_BN/) |
 
 Each lab folder contains the original worksheet (PDF), the code written
 for the exercises, sample outputs, and an `answers.md` with written

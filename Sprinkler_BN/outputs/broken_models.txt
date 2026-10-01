@@ -1,0 +1,11 @@
+/opt/anaconda3/lib/python3.13/site-packages/pgmpy/estimators/__init__.py:4: FutureWarning: `pgmpy.estimators.StructureScore` is deprecated and will be removed in v1.3.0. Use `pgmpy.structure_score` instead.
+  from .StructureScore import (
+=== Structural break: columns do not sum to 1 ===
+  check_model() rejected the model: ValueError: Sum or integral of conditional probabilities for node Rain is not equal to 1.
+
+=== Subtler break: numbers normalise but ordering is wrong ===
+  check_model(): True
+  wrong-semantics model gives P(Rain=1 | WetGrass=1) = 0.717295
+  trusted  oracle      gives P(Rain=1 | WetGrass=1) = 0.704769
+  difference: 0.012526
+  -> check_model() is necessary but not sufficient.
