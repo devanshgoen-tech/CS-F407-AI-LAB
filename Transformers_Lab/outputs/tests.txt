@@ -1,0 +1,27 @@
+test_scaled_dot_product_shapes
+  [PASS] output shape
+  [PASS] weights shape
+  [PASS] weights rows sum to 1
+test_identity_attention
+  [PASS] diagonal attention mass > 0.9
+  [PASS] output follows v order
+test_causal_mask_blocks_future
+  [PASS] no attention leaks to the future
+  [PASS] row 0 is one-hot on index 0
+test_self_attention_shape
+  [PASS] self-attention output shape matches input
+test_cross_attention_shape
+  [PASS] cross-attention preserves decoder length
+test_multihead_decomposition
+  [PASS] multi-head output shape
+  [PASS] weights carry a heads dimension
+  [PASS] per-head softmax rows sum to 1
+test_positional_encoding_properties
+  [PASS] PE table shape
+  [PASS] PE[0, even] = 0
+  [PASS] PE[0, odd]  = 1
+  [PASS] adjacent PEs more similar than distant ones
+test_self_attention_is_permutation_invariant_without_PE
+  [PASS] permuting input permutes output identically
+
+All tests passed.

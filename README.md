@@ -13,6 +13,7 @@ and lab exercises.
 | 4 | Search and A\* with Heuristic Comparison | [Search_Astar/](Search_Astar/) |
 | 5 | Logical Reasoning for Planning (STRIPS + Prolog) | [Logical_Planning/](Logical_Planning/) |
 | 6 | Sprinkler Bayesian Network (pgmpy + LLM code assistant) | [Sprinkler_BN/](Sprinkler_BN/) |
+| 7 | Transformers: attention primitives + HuggingFace / Ollama demos | [Transformers_Lab/](Transformers_Lab/) |
 
 Each lab folder contains the original worksheet (PDF), the code written
 for the exercises, sample outputs, and an `answers.md` with written

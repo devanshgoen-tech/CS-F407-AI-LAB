@@ -1,0 +1,9 @@
+=== Positional encoding properties ===
+  shape: (50, 16)
+  PE[0, 0::2] (sin at pos=0) all zero? True
+  PE[0, 1::2] (cos at pos=0) all one?  True
+  ||PE[p]||_2 range: [2.8284, 2.8284]
+  cos_sim(PE[0], PE[1])  = 0.9356
+  cos_sim(PE[0], PE[10]) = 0.4558
+  cos_sim(PE[0], PE[40]) = 0.4862
+  input (2, 7, 16) -> PE-added (2, 7, 16)

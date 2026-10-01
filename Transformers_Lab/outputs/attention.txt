@@ -1,0 +1,23 @@
+=== 1. Scaled dot-product attention on a toy example ===
+  output shape: (3, 6)  (expected (3, 6))
+  attention row-sums: [1.0, 1.0, 1.0]  (each should be 1)
+
+=== 2. Self-attention module ===
+  input (2, 7, 16) -> output (2, 7, 16)
+
+=== 3. Cross-attention module ===
+  decoder (2, 5, 16), encoder (2, 9, 16) -> output (2, 5, 16)
+
+=== 4. Multi-head attention ===
+  output (2, 7, 16)  (same as input)
+  weights (2, 4, 7, 7)  (B, heads, L_q, L_k)
+
+=== 5. Causal mask ===
+  mask (True = attend):
+    [1, 0, 0, 0, 0]
+    [1, 1, 0, 0, 0]
+    [1, 1, 1, 0, 0]
+    [1, 1, 1, 1, 0]
+    [1, 1, 1, 1, 1]
+  position 0 attention row: [1.0, 0.0, 0.0, 0.0, 0.0]
+  -> position 0 attends only to itself; future tokens are masked
