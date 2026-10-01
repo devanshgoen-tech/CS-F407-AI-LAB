@@ -1,0 +1,32 @@
+=== Task 1 - Manual plan (expected sequence) ===
+  PickUp(Package,A)
+  Move(A,B)
+  Move(B,C)
+  Drop(Package,C)
+
+=== Task 3 Test A - Solvable warehouse ===
+Plan has 4 action(s); explored 6 state(s).
+  S0: ['At(Package,A)', 'At(Robot,A)']
+    -> PickUp(Package,A)
+  S1: ['At(Robot,A)', 'Holding(Package)']
+    -> Move(A,B)
+  S2: ['At(Robot,B)', 'Holding(Package)']
+    -> Move(B,C)
+  S3: ['At(Robot,C)', 'Holding(Package)']
+    -> Drop(Package,C)
+  S4: ['At(Package,C)', 'At(Robot,C)']
+
+=== Task 3 Test B - Impossible (PickUp removed) ===
+No plan found
+
+=== Task 3 Test C - Irrelevant actions do not fool the goal ===
+Package goal, no PickUp:
+No plan found
+
+Robot-only goal (sanity: BFS still works):
+Plan has 2 action(s); explored 2 state(s).
+  S0: ['At(Package,A)', 'At(Robot,A)']
+    -> Move(A,B)
+  S1: ['At(Package,A)', 'At(Robot,B)']
+    -> Move(B,C)
+  S2: ['At(Package,A)', 'At(Robot,C)']

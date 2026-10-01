@@ -1,0 +1,17 @@
+Test A - solvable warehouse
+  [PASS] plan found
+  [PASS] independent replay confirms the plan
+  [PASS] package delivered to C
+  [PASS] BFS gave shortest plan of length 4
+Test B - PickUp removed, package stays at A
+  [PASS] planner reports failure
+Test C - robot reaching C is not package reaching C
+  [PASS] robot can reach C by itself
+  [PASS] package cannot reach C without PickUp
+Test D - preconditions actually block ungrounded Drops
+  [PASS] plan found to pick package up
+  [PASS] replay confirms every precondition held
+Test E - trivial case: initial already satisfies the goal
+  [PASS] empty plan
+
+All tests passed.
