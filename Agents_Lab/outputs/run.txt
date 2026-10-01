@@ -1,0 +1,21 @@
+Warehouse map:
+#####################
+#S....#............G#
+#.##....##########..#
+#....##.............#
+#.######.###.#.###..#
+#........#..........#
+#####################
+
+Path length (moves): 20
+States expanded:     59
+Action sequence:     Right, Right, Right, Down, Right, Right, Right, Up, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right, Right
+
+Path visualised:
+#####################
+#S***.#************G#
+#.##****##########..#
+#....##.............#
+#.######.###.#.###..#
+#........#..........#
+#####################

@@ -1,0 +1,16 @@
+test_original_map
+  [PASS] path found
+  [PASS] path starts at S
+  [PASS] path ends at G
+  [PASS] path length matches action count
+test_trivial_adjacent
+  [PASS] one-step path found
+  [PASS] single Right action
+test_no_solution
+  [PASS] no path reported
+  [PASS] search terminates (finite expansions)
+test_shortest_path
+  [PASS] alternative map solved
+  [PASS] BFS finds length-4 shortest path
+
+All tests passed.
